@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+      <title>Academia</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+
+  <body>
+    <header>
+      <div class="links">
+        <a href="/instrutor.html">Instrutores</a>
+        <a href="/aluno.html">Alunos</a>
+      </div>
+    </header>
+    <form class="card" method="POST" action="/alunos">
+      <section class="avatar" ></section>
+      <section class="details">
+  
+          <h3>Novo Aluno</h3>
+  
+          <div class="item">
+              <div>Avatar URL</div>
+              <div>
+                  <input type="url" name="avatar_url" placeholder="http://">
+              </div>
+          </div>
+  
+          <div class="item">
+              <div>Nome</div>
+              <div>
+                  <input type="text" name="name" placeholder="Nome do aluno">
+              </div>
+          </div>
+  
+          <div class="item">
+              <div>Email</div>
+              <div>
+                  <input type="email" name="email" placeholder="digite seu e-mail" >
+              </div>
+          </div>
+  
+          <div class="item">
+              <div>Data de Nascimento</div>
+              <div>
+                  <input type="date" name="birth" ">
+              </div>
+          </div>
+  
+          <div class="item">
+              <div>Sexo</div>
+              <div>
+                  <span>
+                      <input type="radio" name="gender" >Masculino
+                  </span>
+                  <span>
+                      <input type="radio" name="gender" >Feminino
+                  </span>
+              </div>
+          </div>
+  
+          <div class="item">
+              <div>Tipo Sanguíneo</div>
+              <div>
+                  <select name="blood">
+                      <option value="A1">A+</option>
+                      <option value="A0" >A-</option>
+                      <option value="B1" >B+</option>
+                      <option value="B0" >B-</option>
+                      <option value="AB1" >AB+</option>
+                      <option value="AB0" >AB-</option>
+                      <option value="O1" >O+</option>
+                      <option value="O0" >O-</option>
+                  </select>
+              </div>
+          </div>
+  
+          <div class="item">
+              <div>Peso em (kg)</div>
+              <div>
+                  <input type="number" name="weight">
+              </div>
+          </div>
+  
+          <div class="item">
+              <div>Altura em (cm)</div>
+              <div>
+                  <input type="number" name="height">
+              </div>
+          </div>
+  
+          <button type="submit">Salvar</button>
+  
+      </section>
+  </form>
+
+    <script src="/scripts.js"></script>
+
+    </body>
+
+  </html>
